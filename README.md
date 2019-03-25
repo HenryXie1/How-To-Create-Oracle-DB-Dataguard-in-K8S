@@ -272,6 +272,16 @@ DGMGRL> show configuration;
 DGMGRL> enable configuration;
 DGMGRL> validate database ALSSTG;
 DGMGRL> validate database ALSSTGDR ;
+DGMGRL> show configuration
+Configuration - alsstgdg
+  Protection Mode: MaxPerformance
+  Members:
+  alsstg   - Primary database
+    alsstgdr - Physical standby database
+Fast-Start Failover:  Disabled
+Configuration Status:
+SUCCESS   (status updated 24 seconds ago)
+
 ```
 * Switchover steps
 ```
