@@ -163,8 +163,8 @@ spec:
      * Change db_name to be same as primary ie 'ALSSTG'
      * Add *.db_unique_name to be ie 'ALSSTGDR'
      * Add *.db_file_name_convert='ALSSTG','ALSSTGDR'
- * Create K8S service names for primary and standby dbs
-   * Primary yaml file is like
+ * Create K8S service names for primary and standby DBs
+   * yaml file is like
 
 ```
 apiVersion: v1
@@ -240,8 +240,8 @@ ALSSTGSTB=
     * rman>startup nomount pfile='/opt/oracle/oradata/dbconfig/ALSSTGDR/pfileALSSTGDR.ora';
     * rman>exit
     * $rman (run rman withouth "target /" )
-    * rman> connect target sys/welcome1@alsstgpri
-    * rman> connect auxiliary sys/welcome1@alsstgstb
+    * rman> connect target sys/***@alsstgpri
+    * rman> connect auxiliary sys/***@alsstgstb
     * rman create Standby active database;
     ```
     run {
