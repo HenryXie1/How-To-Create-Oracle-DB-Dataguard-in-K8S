@@ -1,8 +1,7 @@
 ##  How To Create Oracle DB Dataguard in K8S
 ### Requirement
    We run critical workload in Oracle DB. We have dataguard Implementation on-premise.
-   We plan to move DB to OKE (Oracle Kubernetes Engine), we would like to maintain the same high availability DB.
-   So we plan to create dataguard in k8s via statefulset
+   We plan to move Oracle DB to OKE (Oracle Kubernetes Engine), in order to maintain the same high availability of DB. We managed to create dataguard inside k8s via statefulset
 
 #### Create Docker images of DB and Move into K8S
 Please refer details on other [notes](https://www.henryxieblogs.com/search?q=db+to+k8s)
